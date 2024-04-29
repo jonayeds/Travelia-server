@@ -38,7 +38,7 @@ async function run() {
     const cursor =  countriesCollection.find()
     const result =  await cursor.toArray()
     res.send(result)
-   })
+   })  
    app.post('/countries', async(req, res)=>{
     const allCountries =  [
       { name: "Bangladesh", image: "https://d3oyr1ewtd57ia.cloudfront.net/BlogListView-Image/9457682352010424-559463218835093-Ratargul-2.jpg", description: "Rich culture and beautiful natural destinations" },
