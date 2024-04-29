@@ -51,7 +51,7 @@ async function run() {
     ];
     const result = await countriesCollection.insertMany(allCountries)
     res.send(result)
-   })
+   }) 
    app.get("/countries/:country", async (req, res) => {
     const country = req.params.country;
     console.log(country)
