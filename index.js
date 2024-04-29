@@ -47,7 +47,6 @@ async function run() {
       { name: "Thailand", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0NLjRJOLZak8MGK6U_egvMbauqfovuPA30gNekjS5cA&s", description: "Low cost solution for  a luxury trip" },
       { name: "Malaysia", image: "https://static2.tripoto.com/media/filter/tst/img/210609/TripDocument/1474116741_destination_for_malaysian_24343.jpg", description: "Amazing hospitality and rich historical places" },
       { name: "Cambodia", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_TLz5KRRPQc-tCBaKvp2Y9m6Z041LMt-bWqGMTzis-Q&s", description: "One of  the best place to explore as a backpacker" },
-      
     ];
     const result = await countriesCollection.insertMany(allCountries)
     res.send(result)
