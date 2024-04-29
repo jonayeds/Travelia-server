@@ -66,7 +66,7 @@ async function run() {
       const result = await spotsCollection.insertOne(newSpot);
       res.send(result);
     });
-
+ 
     app.get("/spots", async (req, res) => {
       
       const cursor = spotsCollection.find();
